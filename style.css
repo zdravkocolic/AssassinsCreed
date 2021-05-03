@@ -1,0 +1,303 @@
+
+html{
+	background-image:url(slike/background.jpg);
+	background-attachment:fixed;
+	background-position:center top;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-color:black;
+	scroll-behavior: smooth;
+
+}
+
+h1{
+	font-size:34px;
+
+	margin:0.3em 0 0.5em;
+}
+h2{
+	font-size:30px;
+	margin: 0.3em 0 0.5em;
+}
+
+#nav #icons{	
+	float:right;
+	font-size:140%;
+	margin-top: 0.5vw;
+
+}
+#lista{
+	min-width: 40%;
+}
+#icons{
+	min-width: 17%;
+
+}
+
+#icons a{
+	color:black;
+
+}
+
+#icons a:hover{
+	color:#BBBBBB;
+	font-size: 85%;
+}
+#icons a:active{
+	color:purple;	
+}
+
+a:link{
+	color:black;	
+}
+a:visited{
+   color:red;
+   text-decoration:none;
+}
+
+a:hover{
+   color:#BBBBBB;
+   text-decoration:underline;
+   font-size:90%; 
+}
+a:active{
+   color:#FF0000; 
+}
+img {
+   vertical-align:bottom;
+}/*treba mi zbog ponistenja base line prostora*/
+
+#nav{
+   background-color:#B22222;
+   height:40px;
+   margin-bottom:1vw;
+   border-radius:6px;
+   font-size: 1.3vw;
+   position: relative;
+}
+#nav a:link{
+   text-decoration:none;
+   
+}
+#nav ul{
+   margin:0;
+   padding:0;
+   list-style:none; 
+}
+#nav ul li ul{
+   background-color:rgb(192, 11, 11,0.7);
+   position:absolute;
+   top:40px;
+   left:0;
+   width:160px;
+   display:none;/*sakrivam drugi nivo*/
+   
+}
+#nav ul li ul li{
+   float:none;
+    
+}
+
+#nav ul li:hover > ul{
+   display:block;/*prikaze drugi nivo navigacije*/
+   
+}
+#nav li{
+   float:left;
+   position:relative;
+   
+}
+#nav ul li ul li ul{
+	   top:0;
+	   left:160px;	   
+}
+
+
+
+#nav ul li a{
+   padding:10px;
+   display:block;
+   height:20px;   
+}
+#nav ul li a:link, 
+#nav ul li a:visited{
+   color:#FFFFFF;  
+}
+
+#nav ul li a:hover{
+   background-color:#A9A9A9;
+   text-decoration:none;
+}
+
+#nav ul li a:active{
+   background-color:#999999;
+color:#000000;
+}
+
+body{	
+	color:white;
+	margin:0;
+	padding:0;
+	font-family:'Philosopher',Arial, sans-serif;
+	font-weight:normal;	
+}
+
+#Wrapper{
+	
+	width:78%;
+	padding:0.5%;
+	margin:auto;
+	position:center;
+	background-color: rgba(0, 0, 0, 0.8);
+	
+}
+#Head{
+	background-color: rgba(255, 255, 255, 0.8);
+	margin:1% auto;
+	overflow:hidden;/*da ne ispadne nesto*/
+	color:black;
+	padding:1%;
+	border-radius:6px;
+}
+#logo{
+	width:30%;
+	height:30%;
+	margin-bottom:-8%;		
+}
+
+.logo{
+	float:left;
+	
+}
+.slogan{
+	float:right;
+	position: center;
+	font-size:2vw;
+	font-style:italic;
+}
+.boja{
+	color:#B22222;
+	
+}
+	
+#glavni{	
+	overflow:hidden;
+	color:black;
+	
+}
+#Main{
+	background-color:#E6E6E6;
+	margin:0 1% 1% 0;
+	width:67%;
+	float:left;
+	border-radius:6px;
+	padding:1%;
+	font-size:1.5vw; 
+}
+.slika{
+	border-radius:8px;
+	margin-left:15%;
+}
+
+#side{
+	background-color:#E6E6E6;
+	border-radius:6px;
+	width:29%;
+	float:left;
+	position:relative;
+	font-size:1.3vw;	
+}
+
+#poseban{
+	position: absolute;
+	bottom:3%;
+	left:2%;	
+}
+
+#side img{
+	width:40%;
+	height:70%;
+	float:left;
+	margin-left:3%;
+}
+#side .obican{
+	clear:both;
+	padding:2%;
+}
+#side .spec{
+	float:left;
+	margin-left:2%;
+	font-style:italic;
+	font-weight: bold;
+}
+#Footer{
+	background-color:#B22222;
+	text-align:center;
+	padding: 1%;
+	border-radius:6px;
+	margin:1%;
+}
+#Footer p{
+	margin:0;	
+}
+.us img{
+	width:60%;
+	height:60%;
+	
+}
+.us{
+	border:1px solid black;
+	margin-bottom:10px;
+	padding:2%;
+	overflow:hidden;
+}
+.us img{
+	float:left;
+	margin-right:1%;	
+}
+
+.us p{
+	margin-top:6%;	
+}
+.games{
+	width:30%;
+	border:1px solid black;
+	margin-left:0.3%;
+	padding:0.5%;
+	float:left;
+	overflow:hidden;
+}
+.games img{
+	width:90%;
+	height:60%;	
+}
+.gallery{
+	width:20vw;
+	height:20vw;
+	float:left;
+	margin:1% 1% 2% 2%;
+	transition:1s;	
+}
+.gallery:hover {
+filter:grayscale(100%);
+transform:scale(1.1);
+}
+#glavni a:hover{
+text-decoration:none;
+	font-style: none;
+	color:black;
+	font-size: 19px;
+}
+
+@media screen and (max-width: 760px) {
+	
+#nav{
+	font-size: small;
+	
+}
+#nav #icons {
+margin-top: 8px;
+	font-size: medium;
+	margin-right: 1%;
+}
+}
